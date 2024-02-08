@@ -59,15 +59,10 @@ public class SpellChecker {
 			if (mini < minimum){
 				minimum = mini;
 				word1 = dictionary[i];
-			}
-				
+			}	
 		}
-		if (minimum < threshold)
+		if (minimum <= threshold)
 			return word1;
-		return word;
-
-
-			
+		return word;	
 	}
-
 }
